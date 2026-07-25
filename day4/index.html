@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .z {
+            height: 10vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .z::before {
+            position: absolute;
+            content: "";
+            background: conic-gradient(transparent, green, rgb(8, 242, 180), rgb(73, 24, 217), rgb(226, 250, 7), rgb(217, 25, 169), rgb(4, 25, 214), transparent);
+
+            height: 1200%;
+            width: 200%;
+
+            animation: x 8s infinite ease-in-out;
+
+        }
+
+        .z::after {
+            content: "";
+            background: black;
+            position: absolute;
+            inset: 5px;
+            border-radius: 15px;
+        }
+
+        .z h1 {
+            color: white;
+            z-index: 100000;
+        }
+
+        @keyframes x {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        select {
+            width: 80vw;
+            margin : 10vh auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border : 2px solid black;
+            border-radius: 15px;
+            height: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="z">
+        <h1>Day 4</h1>
+    </div>
+
+    <select name="x" id="x">
+        <optgroup label="GTA">
+            <option value="c">1</option>
+            <option value="d">2</option>
+            <option value="e">3</option>
+            <option value="f">4</option>
+        </optgroup>
+        <optgroup label="Tcent">
+            <option value="c">1</option>
+            <option value="d">2</option>
+            <option value="e">3</option>
+            <option value="f">4</option>
+        </optgroup>
+        <optgroup label="Garena">
+            <option value="c">1</option>
+            <option value="d">2</option>
+            <option value="e">3</option>
+            <option value="f">4</option>
+        </optgroup>
+    </select>
+</body>
+
+</html>

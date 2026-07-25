@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            width: 60vw;
+            margin: 20px auto;
+        }
+
+        fieldset {
+            display: flex;
+            gap: 20px;
+        }
+
+        input {
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .z {
+            display: flex;
+            gap : 15px;
+        }
+
+        button {
+            padding : 15px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>User Personal Information</legend>
+            <label for="name">Enter Your Full Name : </label>
+            <input type="text" placeholder="Enter Your Name" id="name">
+
+            <label for="mail">Enter Your Email : </label>
+            <input type="mail" name="mail" id="mail">
+
+            <label for="pass">Enter Your Password</label>
+            <input type="password" name="pass" id="pass">
+
+            <label for="cpass">Renter Your Password</label>
+            <input type="password" name="pass" id="cpass">
+
+            <label for="">Enter Your Gender</label>
+            <div class="z">
+                <label for="x">Male</label><input type="checkbox" name="Gender" id="x">
+                <label for="y">female</label><input type="checkbox" name="Gender" id="y">
+                <label for="z">Others</label><input type="checkbox" name="Gender" id="z">
+            </div>
+
+
+            <label for="dat">
+                Enter Your Date
+            </label>
+            <input type="date" name="date" id="dat">
+
+            <label for="add">
+                Enter Your Address
+            </label>
+            <input type="text" name="add" id="add">
+            <button>Submit</button>
+        </fieldset>
+        
+    </form>
+</body>
+
+</html>

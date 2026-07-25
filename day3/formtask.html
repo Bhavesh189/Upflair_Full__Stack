@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deatils</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, sans-serif;
+        }
+
+        .x {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            height: auto;
+            width: 50vw;
+            border-radius: 12px;
+            margin: auto;
+            align-items: center;
+            margin: 15px auto;
+            background-color: white;
+            padding: 50px;
+            box-shadow: 3px 13px 90px 12px rgba(0, 0, 0, 0.20);
+            border-radius: 8px;
+        }
+
+        .p {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+        }
+
+        h1,
+        h2 {
+            color: red;
+        }
+
+        body {
+            background-color: rgb(179, 255, 15);
+        }
+
+        input[type="submit"] {
+            color: white;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        input {
+            border-radius: 2px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        label,
+        input[type="submit"] {
+            cursor: pointer;
+        }
+
+        .c {
+            display: flex;
+            flex-direction: column;
+        }
+
+        textarea {
+            width: 100%;
+            height: 20vh;
+        }
+
+        .z {
+            display: flex;
+            gap: 20px;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .x {
+                width: 90vw;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .z {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                padding: 15px;
+            }
+
+            textarea {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .x {
+                width: 95vw;
+                padding: 18px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="x">
+        <h1>Personal Details</h1>
+        <hr>
+
+        <div class="p">
+            <div class="c">
+                <label for="name">
+                    Name :
+                </label><br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="c">
+                <label for="pass">Password :
+                </label><br>
+                <input type="password" name="pass" id="pass" placeholder="Enter Your Password">
+            </div>
+
+            <div class="c">
+                <label for="m">E-Mail Id : </label><br>
+                <input type="email" name="mail" id="m" placeholder="Enter Your Mail">
+            </div>
+
+            <div class="c">Gender :
+                <label for="male">
+                    male
+                </label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">
+                    female
+                </label>
+
+                <input type="radio" name="gender" id="female">
+            </div>
+
+            <div class="c">
+                <label for="co">
+                    Contact :
+                </label><br>
+                <input type="text" name="c" id="co" placeholder="Enter Your Contact Number">
+            </div>
+        </div>
+
+        <h1>Educational Qualifications</h1>
+
+        <hr>
+        <div class="p">
+
+            <div class="c">
+
+                <label for="d">
+                    Degree :
+                </label>
+                <br>
+
+                <select name="d" id="d">
+                    <option value="Btech">Select Group</option>
+                    <option value="Btech">Btech</option>
+                    <option value="Btech">Btech</option>
+                    <option value="Btech">Btech</option>
+                </select>
+            </div>
+
+            <div class="c">
+                <label for="dd">
+                    Engineering :
+                </label>
+                <br>
+
+                <select name="d" id="dd">
+                    <option value="Btech">Select Group</option>
+                    <option value="Btech">Btech</option>
+                    <option value="Btech">Btech</option>
+                    <option value="Btech">Btech</option>
+                </select>
+            </div>
+
+            <div class="c">
+                <label for="x">
+                    Hobby :
+                </label>
+                <div class="z">
+                    <label for="chess">Chess</label>
+                    <input type="checkbox" name="r" id="chess">
+                    <label for="gta">GTA V</label>
+                    <input type="checkbox" name="r" id="gta">
+                </div>
+            </div>
+
+        </div>
+
+        <label for="add">
+            <h1> Address</h1>
+        </label>
+        <hr>
+
+        <textarea name="add" id="add"></textarea>
+
+        <div class="c">
+            <label for="r">Attach Resume : </label>
+            <input type="file" name="r" id="r">
+        </div>
+
+        <input type="submit" value="Submit">
+    </div>
+
+</body>
+
+</html>
