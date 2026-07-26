@@ -1,0 +1,45 @@
+.xyzz {
+    display: flex;
+    color : white;
+    flex-direction: column;
+    width : 40vh;
+    margin: 0 auto;
+    transform: translateY(20vh);
+    background-color: rgba(0, 0, 0, 0.711);
+    height: 60vh;
+    width: 50vw;
+    align-items: center;
+    padding : 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+h1 {
+    font-weight: 20px;
+}
+
+.zzz {
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    margin-top : 20px;
+}
+
+.zzz input, .zzz button {
+    padding : 10px;
+    border-radius: 10px;
+    width: 30vw;
+    border : none;
+}
+
+
+@media screen and (max-width : 700px) {
+    .xyzz {
+        width : 80vw;
+        height : 70vh;
+    }
+
+    .zzz input, .zzz button {
+        width: 60vw;
+    }
+}
