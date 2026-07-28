@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            animation: xy 0.3s infinite ease-in-out;
+        }
+
+        @keyframes xy {
+            0% {
+                background-color: beige;
+            }
+
+            20% {
+                background-color: blueviolet;
+            }
+
+            40% {
+                background-color: red;
+            }
+
+            60% {
+                background-color: yellow;
+            }
+
+            80% {
+                background-color: pink;
+            }
+
+            100% {
+                background-color: rgb(51, 150, 237);
+            }
+        }
+
+
+        .container {
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: row;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            /* justify-content: flex-start; */
+            column-gap: 20px;
+            align-items: center;
+            background-color: brown;
+            margin: 20vh auto;
+            border-radius: 14px;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+            /* align-items: baseline; */
+        }
+
+        .items:hover {
+            transform: scale(1.1);
+        }
+
+        .items {
+            height: 50px;
+            width: 150px;
+            border: 2px solid black;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            background-color: Green;
+            color: white;
+            font-family: poppins, sans-serif;
+        }
+
+        .i {
+            background-color: darkkhaki;
+        }
+
+        .j {
+            background-color: rgb(41, 15, 242);
+        }
+
+        .k {
+            background-color: rgb(229, 15, 200);
+            order: 1;
+        }
+
+        .l {
+            background-color: rgb(235, 14, 14);
+        }
+
+        .z {
+            height: 10vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .z::before {
+            position: absolute;
+            content: "";
+            background: conic-gradient(transparent, green, rgb(8, 242, 180), rgb(73, 24, 217), rgb(226, 250, 7), rgb(217, 25, 169), rgb(4, 25, 214), transparent);
+
+            height: 1200%;
+            width: 200%;
+
+            animation: x 8s infinite ease-in-out;
+
+        }
+
+        .z::after {
+            content: "";
+            background: black;
+            position: absolute;
+            inset: 5px;
+            border-radius: 15px;
+        }
+
+        .z h1 {
+            color: white;
+            z-index: 100000;
+        }
+
+        @keyframes x {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="z">
+        <h1>Day 6</h1>
+    </div>
+    <div class="container">
+        <div class="items i">A</div>
+        <div class="items j">B</div>
+        <div class="items k">C</div>
+        <div class="items l">D</div>
+    </div>
+</body>
+
+</html>

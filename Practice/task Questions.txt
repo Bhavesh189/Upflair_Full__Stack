@@ -1,0 +1,49 @@
+What are the three ways to apply CSS to an HTML document?
+
+How do you link an external CSS file to an HTML page?
+
+Where should you place the <style> tag in an HTML file?
+
+What is the difference between inline and internal CSS?
+
+Which CSS implementation has the highest specificity: inline, internal, or external?
+
+How do you select an element with a specific ID in CSS?
+
+Write a CSS rule to apply red color to all <p> elements.
+
+Write a CSS rule to apply background color to a class named .card.
+
+What is the difference between .title and #title selectors?
+
+Which selector has more specificity: class or ID?
+
+Write a CSS rule to give a solid red border of 2px to a div.
+
+How do you remove the border from an input element?
+
+Apply a different border to each side of a box using CSS.
+
+What does the shorthand border: 1px dashed blue; mean?
+
+Can we use border on inline elements? What happens?
+
+How do you make a square div appear circular using border-radius?
+
+What will border-radius: 10px 20px 30px 40px; do?
+
+Write CSS to round only the top-left and bottom-right corners.
+
+Can border-radius be applied to images?
+
+What happens if you apply border-radius to an element with an outline?
+
+What’s the difference between margin and padding?
+
+How do you apply equal margin on all sides?
+
+What will margin: 10px 20px; do?
+
+How can you center a block element horizontally using margin?
+
+What is margin collapse? Give an example.
