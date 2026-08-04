@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto, sans-serif;
+    font-family: poppins, sans-serif;
 }
 
 
@@ -25,6 +25,8 @@ nav {
     background-color: rgba(255, 242, 225, 0.505);
     z-index: 1;
     font-weight: 300;
+    font-size: 20px;
+    border-bottom: 2px solid black;
 }
 
 ul {
@@ -36,6 +38,7 @@ ul {
 li {
     list-style: none;
     cursor: pointer;
+    font-size: 25px;
 }
 
 li:hover {
@@ -110,6 +113,14 @@ img {
     height: 50px;
     transition: 0.3s ease-in-out;
     font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.q {
+    font-size : 20px;
 }
 
 .ec:hover,
