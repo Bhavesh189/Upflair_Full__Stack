@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +24,9 @@
             background-color: aqua;
             box-shadow: 2px 2px 200px red, -2px -2px 200px red;
             width: 50vw;
-            height: 85vh;
+            height: 95vh;
             margin: 10vh auto;
-            padding : 20px;
+            padding: 20px;
         }
 
         input {
@@ -37,7 +38,7 @@
             display: flex;
             margin: 10vh;
             width: 50vw;
-            gap : 20vw;
+            gap: 20vw;
         }
 
         button {
@@ -54,28 +55,39 @@
         .x {
             display: flex;
             flex-direction: column;
-            gap : 20px;
+            gap: 20px;
         }
 
+        .y {
+            display: flex;
+            width: 50vw;
+            justify-content: space-around;
+        }
     </style>
 </head>
+
 <body>
     <form action="">
         <div class="x">
-        <label for="name">Name :</label>
-        <input type="text" name="name" id="name" placeholder="Enter Your Name">
-        <label for="mail">Email :</label>
-        <input type="email" name="email" id="mail" placeholder="Enter Your Mail">
-        <label for="no">Mobile Number :</label>
-        <input type="tel" name="no" id="no" placeholder="Enter Your Number">
-        <label for="pass">Enter Your Password :</label>
-        <input type="password" name="pass" id="pass" placeholder="Enter Your Password">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <label for="mail">Email :</label>
+            <input type="email" name="email" id="mail" placeholder="Enter Your Mail">
+            <label for="no">Mobile Number :</label>
+            <input type="tel" name="no" id="no" placeholder="Enter Your Number">
+            <label for="pass">Enter Your Password :</label>
+            <input type="password" name="pass" id="pass" placeholder="Enter Your Password">
         </div>
 
         <div class="btns">
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
         </div>
+
+        <div class="y"><a href="https://x.com/">Login Now</a>
+            <a href="https://www.youtube.com/" target="_blank">Sign Up now</a>
+        </div>
     </form>
 </body>
+
 </html>
