@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: poppins, sans-serif;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: inset 20px 20px 30px green,inset -20px -30px 30px green;
+    text-shadow: 2px 2px 3px rgb(14, 114, 255);
+}
+
+body {
+    animation: x 11s ease-in-out infinite;
+}
+
+@keyframes x {
+    0% {
+        background-color: aquamarine;
+    }
+
+    20% {
+        background-color: blue;
+    }
+
+    40% {
+        background-color: green;
+    }
+
+    60% {
+        background-color: rgb(206, 255, 10);
+    }
+
+    80% {
+        background-color: rgb(23, 128, 248);
+    }
+
+    100% {
+        background-color: teal;
+    }
+}
+
+.x,
+#x {
+    color: green;
+    font-size: 40px;
+    background-color: white;
+    text-align: center;
+    border: solid 20px red;
+    border-radius: 14px;
+    padding: 30px;
+    margin: 20px;
+    text-shadow: 2px 2px 3px rgb(14, 114, 255);
+}
