@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    /* border: 2px solid red; */
+    background-color: green;
+    color: white;
+}
+
+.container {
+    height: auto;
+    padding: 30px;
+    margin: 20px;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    gap: 20px;
+    background-color: yellow;
+    /* flex-direction: column; */
+    border-radius: 14px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* justify-content: flex-start; */
+    /* justify-content: baseline; */
+    /* justify-content: first baseline; */
+    /* perspective: 20px; */
+    /* transform: rotateX(200deg); */
+}
+
+.items {
+    height: 150px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    border-radius: 14px;
+    box-shadow: 2px 2px 10px black, -2px -2px 10px black;
+}
+
+.items>p {
+    animation: badachota 1s ease-in-out infinite;
+}
+
+
+@keyframes badachota {
+    50% {
+        font-size: larger;
+    }
+}
