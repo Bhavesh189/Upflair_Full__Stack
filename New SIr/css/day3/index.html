@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cont {
+            height: 400px;
+            width: 400px;
+            margin: 10vh auto;
+            border: 2px solid red;
+        }
+
+        .x {
+            height: 400px;
+            width: 400px;
+            background-color: green;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .y {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .z {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .a {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            margin: 10vh auto;
+            z-index: 30;
+            display: flex;
+        }
+        .b {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            /* display: flex; */
+            z-index: -1;
+        }
+
+        h1 {
+            color: white;
+            font-family: poppins, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="x">
+        </div>
+        <div class="y">
+        </div>
+        <div class="z">
+            <h1>Inner Div</h1>
+        </div>
+    </div>
+
+    <div class="a">
+        <div class="b"></div>
+    </div>
+</body>
+
+</html>
