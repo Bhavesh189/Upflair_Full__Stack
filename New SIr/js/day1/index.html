@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        .x {
+            height: 20vh;
+            width: 30vw;
+            background-color: green;
+            font-family: poppins, sans-serif;
+            color : white;
+            border: 2px solid red;
+            border-radius: 14px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .z {
+            margin: 30vh auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap : 30px;
+        }
+
+        .x:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Bhavesh JAvascript</h1> -->
+
+    <div class="z">
+
+    <button class="x" onclick="alert('Hello, World!')">alert</button>
+    <button class="x" onclick="confirm('Hello, World!')">confirm</button>
+    <button class="x" onclick="console.log(prompt('Hello, World!'))">prompt</button>
+
+    </div>
+</body>
+</html>
