@@ -27,6 +27,10 @@ box.addEventListener('keydown', (e) => {
     console.log(`key Downed : ${e.key}`)
 })
 
+box.addEventListener('change', (e) => {
+    console.log(`Now : ${e.target.value}`)
+})
+
 h1.addEventListener('click', () => {
     console.log("Text Clicked")
 })

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    font-size: 3rem;
+    list-style: none;
+    font-family: poppins, sans-serif;
+    background-color: green;
+    color : white;
+}
+
+li {
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+
+li:hover {
+    color : yellow;
+    transform: scale(1.1);
+}

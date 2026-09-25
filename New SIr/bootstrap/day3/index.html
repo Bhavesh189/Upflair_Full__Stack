@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" style="height: 350px;" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc7wyb5waXZf-LnxlYOqajAQ42vyC07isV4TgwWa_zeA&s=10" style="object-fit: cover;"
+                    class="d-block w-100 h-100 object-fit-cover" alt="Banner 1">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="43563.jpg" style="object-fit: cover;"
+                    class="d-block w-100 h-100 object-fit-cover" alt="Banner 2">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJmnrzImY-22-haZVo9VP4RfuawIQbtY1xP_SaezHyg&s=10" style="object-fit: cover;"
+                    class="d-block w-100 h-100 object-fit-cover" alt="Banner 3">
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-4">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAaVBMVEUKZsL///8AYMAAWb69zemuwOP3+fxnjc8AY8Ho7fdtldI4dsfw8/kAXb8AW78fbcUAT7vD0uvg6PWRq9sAVb2ht+AtcMVAfMm0yOddic7U3vBYhczM2O5ij9BTgcuatt8ASrp8ntaJpNgYcz8ZAAACbElEQVR4nO2Z65KjIBBGBaOBKGq85z7Z93/INZnJJNJmtkj1BKv2O79SBcRT0ELTBgEAAAAAAAAAAAAAAG6oAd8OFlKqtutyJaVvkzsqWy1SMaD7TTiXCZPtVtyI13IeWmaXigd0Mgct1Y6khEjnsIhyLyyizLdTIA+2lIiP3ierJlMlxMn7ZIUxtSoLz1IqmbASH76tjrO06uZoFcgJK+07roKipFZ96NtKnqnV0n/mkGtbaut9Ex0O56Vtlc/AKghPY6mz9539Snh4yBp05z3UvzBJ9OUUV7n/SL+hwvpYNU3VFca3yhhlsszMIczB/400Ul0ZfvzC3w8X5jEPMf+sSYVmU/VbrdNy2zeHoOYWU7uVxf0y0dpN7bVJmfakHzKgOO2PzLUAuX6ayEhyRB4uzzZ5Q/OM9a5mtVrYD4juVnZKeLEyy9QecZ2wE2dNx9WqnpioT/aMq+hoJftnUkNi1rLNlptVEdm9R1ps+YaT1ebPT1LDUK7T3clqNRnoj9pMoeVkNXV5HKGZ9gcnq39z5llDZqs9ixS3leApfnFb8RS/XrSKnzXxFL9esNJRVwzkDbl2X3RZjkN3q3XyWWVWYb6daN5xbFnOVlXxPRnKTFRVK469wdVqVEaSCe3AUhh3tCrHzyzIaNF7sFqN10euSI/F+1ewtEJZJeQ9XLw/2mmqQl5DD1bk8K3JZeT9VjEpmYZk+Put0s7euEOSMnuwIp80YQUrWMEKVrCCFaxgBStYwQpWsIIVrOZuFaV6RNrcCptqU1pNJbHKGnt4xPIxThEmu+VXXh7+O7z/iQAAAAAAAAAAAAAAeOIvzb4syJeyrmYAAAAASUVORK5CYII="
+                        class="card-img-top object-fit-contain p-3" style="height: 180px;" alt="LinkedIn">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p class="card-text flex-grow-1">
+                            Some quick example text to build on the card title.
+                        </p>
+                        <a href="https://www.linkedin.com/in/bhaveshsharmainfinity" class="btn btn-primary mt-auto">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAvVBMVEX///8HBwb4nxu0srEAAACxr67n5uYDAwD4mwD6+voAAAT//vz5mACenp7/+vSPj49YWFjz8/OlpaVpaWl6enpmQg7+2rD8wHkaGhqGhoaZl5f+xH/8xYX90p3/8uP8uGImJibT09P8yY9kYmD9vW//5Mj/7dn8rkdPTU2/v7/Kysp/eXKFVhBuRw59URD91KZoPgBuZVz8sVP7rDlFREQ7OTaclIu8ikpGKAC7eBObZBNBKQmvcRXu38ykdDpXNNJ2AAAFA0lEQVR4nO2ba3ebOBCGAQssLnHq2MFJDHZNfd807trd3bZ7+f8/q4g4CZJGBGGB6FneDz394HP69pnRaCQNhvH/0eLmynZ0m6C1u0NE24VuIzk9IGQSobudbiuvukZ981kItYXVm6fU1Ui3m0xu3lMawFagus97Sl31dBsy6Nhlpm50O+I4paZs3ZY4TmYf7VvnyUTboWZPD5wn/dHj8ikN3lizJ4jT2NXriedktoAT4mPXOk59dK/XEpBPbeSkP5+uuHzSv+74Om5qzyeI06h1nPTX8V+Dk4l+02sp5cR7ut1MVr5GTwAn79GycICTtS5PQF/g3VqZsDUdaPEE5dOj9SKMDxqCCKw777OVE17OmvbE9yomerIoYbzS7ukln/IKm/XE59MT78kKDs15gmoBwImEsDFXUC2AOGWsGopgeU4Zq7gJT2Xz6ZVVA67uuWVH6hM+C2SV1O0J2oOfMD5GcRjG0RG0VfcahPaWL5t4cN5S/Fm8AWzVm1dQT3d7oPbeQQzQqpMVxOl3rh2YAbDqYwX2vsAF1GAe8K5qqlcQJ7gf95cAq1oiCHH6JLioGxwBVzWwKs+JCGSlvJMBORWcpYC8wifFvSjEqfjMCbBSHMAbgNOHd86cPpdXausCtAe/fw7mWOFIoacqnDJXc1ybKWgPLndfwLBSmFNVOWWuaFbKzlyQp/L3KnlWgbK+am9W55S5el2DeK7qJO9cfP/kJ0GAycl0qqp0Dj9dxinTOtmcjtFaWTm/ad+9r+FywUNb3Z74kwvY0zUr5yNjSj6f1Oua9aSfk2EwJaoNnIw94+lrCzgZY8oUQm2YhxpuaVNXug0RLagiVRC84WLXq6DdokI69GhQD6LfOTvbrmKqZ/fkR4aogtBHov+WU9FSZkvaFbUXC7cXt7KjTLIR/IMyJXrrXFTnRFDJDu1Re4xwDqpSjuckWY/pxSeYpBle6MmWjF8rTZllwndhnktnOp3o14Jf7S9K9J7sHCFdEkQ3LM5lq092P6XaTiQsnpfUBHsv2wwx24xwkK16AG35KcI9dYWAtsIfks2vinqOfNPofKU3v4KZP6eSpB0Rjej4fWxD48kklf5xkUzMUVT/QFumMXvEEjZ6DWpxR7tqB6sRg6rfBlb87ZT2gS2DP7i3ghVdQJ9ZSefVbDWZT0OFU0ILYPxWklVoBRjj4KTwac0GXEmxil4vYhVe7UNjwRIn+OTtMUvlMMf4kuHSiLrcV5dX7qg6q7iuZxB+uynNKmIejFSOcrj8bXopVjH7tDZVaKpiXkXsg63ioZcqrFhONby3Q6xEZ8FMHCelq+9ZsqySZgZeeFYFOw7AqZYxqpRV6XoFcMKTWiZkXZAV8E/5CcBJ5Us75Qqq7X9yrvwpwGlZkycBq7+YEZbVhucUKHsWhcR27abpfbOWb1Px/mpuNcqJCGDlfU87uMkhXK3Cw+QUACN5QVT3FDhXr7wfhAXG5z941cyJyGV7Bu8RctJUPr2IYZWREqsBTkQMK++7fk5E+TXo/V3IadKQJbqKon+KONWztwg0Op+8PFSUUYpbzffkPiDkeR4qzPIgbvorlX//+3L7uSh0+NTwxyBEsyVcK8+Wgknjn81kWsPj58QSnmv7GstfHaG9DgdzrR+uGbPkmN/zyF+PiZ7A5TVYh9NNSicgE2WbKFzr+V4Nkj9IpTVmnTp16tSpU6dOnTp16tTpl9FPD1JbS2xpvFIAAAAASUVORK5CYII="
+                        class="card-img-top object-fit-contain p-3" style="height: 180px;" alt="Leetcode">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Leetcode</h5>
+                        <p class="card-text flex-grow-1">
+                            Some quick example text to build on the card title.
+                        </p>
+                        <a href="https://leetcode.com/u/bhavesh1899287/" class="btn btn-primary mt-auto">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="data:image/png;base64,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"
+                        class="card-img-top object-fit-contain p-3" style="height: 180px;" alt="Github">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Github</h5>
+                        <p class="card-text flex-grow-1">
+                            Some quick example text to build on the card title.
+                        </p>
+                        <a href="https://github.com/Bhavesh189" class="btn btn-primary mt-auto">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                        <p><a href="#!" class="text-reset">Angular</a></p>
+                        <p><a href="#!" class="text-reset">React</a></p>
+                        <p><a href="#!" class="text-reset">Vue</a></p>
+                        <p><a href="#!" class="text-reset">Laravel</a></p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                        <p><a href="#!" class="text-reset">Pricing</a></p>
+                        <p><a href="#!" class="text-reset">Settings</a></p>
+                        <p><a href="#!" class="text-reset">Orders</a></p>
+                        <p><a href="#!" class="text-reset">Help</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2026 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body {
+  background-color: red;
+}
+
+input {
+  border-radius: 19px;
+  padding : 30px;
+  width: 80vw;
+  margin-left: 10%;
+  margin-top: 20vh;
+}
+
+input::placeholder {
+  font-size: 30px;
+}
+
+h1 {
+  color : yellow;
+  font-size: 4rem;
+  font-family: poppins, sans-serif;
+  text-align: center;
+  margin-top: 10vh;
+}
